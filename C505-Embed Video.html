@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title of the webpage-->
+    <title> Oiiaoiia Cat </title>
+
+    <style>
+
+        body 
+        {
+
+            height: 100vh; 
+            margin: 0;
+            display: flex; /*Enables flexbox layout for the body*/ 
+            justify-content: center; /*Centers the content horizontally*/
+            align-items: center; /*Centers the content vertically*/
+            background-color: #f0f0f0;
+        }
+
+        .video 
+        {
+           
+            text-align: center; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="video">
+        <video width="640" height="360" controls loop poster="oiia cat img.jpeg"> <!--Poster: Specifies the image to display before the video plays-->
+            <source src="oiia cat vid.mp4" type="video/mp4"> <!--Source of the video file-->
+            Your browser does not support the video tag. <!--Fallback Message for unsupported browsers-->
+        </video>
+
+    </div>
+</body>
+</html>

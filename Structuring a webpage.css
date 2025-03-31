@@ -1,0 +1,116 @@
+body 
+{
+    font-family: Arial; 
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #17072b; 
+    color: #FFFFFF; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav 
+{
+    font-family: Tahoma;
+    background-color: #172d67; 
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul 
+{
+    list-style-type: none; /*Remove bullet points*/
+    padding: 0;
+}
+
+nav ul li 
+{
+    display: inline; /*Display items in a line*/
+    margin-right: 20px; /*Space between items*/
+}
+
+nav ul li a 
+{
+    color: #FFFFFF; /*Link text color*/
+    text-decoration: none; /*Remove underline*/
+}
+
+main 
+{
+    padding: 20px;
+}
+
+section 
+{
+    margin-bottom: 40px; /*Space between sections*/
+}
+
+.image-container 
+{
+    display: flex; /*Use flexbox for layout*/
+    justify-content: space-around; /*Space images evenly*/
+}
+
+.image-box 
+{
+    width: 500px; 
+    height: 400px; 
+    overflow: hidden; /*Hide overflow*/
+}
+
+.image-box img 
+{
+    width: 100%; 
+    height: auto; /*Maintain aspect ratio*/
+}
+
+
+.image-container2 
+{
+    display: flex; /*Use flexbox for layout*/
+    justify-content: space-between; 
+    margin-top: 20px; /*Space above the image container*/
+}
+
+.image-box2 
+{
+    width: 200px; 
+    height: 150px; 
+    overflow: hidden; /*Hide overflow*/
+    border-radius: 8px; /*Rounded corners*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Shadow effect*/
+}
+
+.image-box2 img 
+{
+    width: 100%; 
+    height: auto; 
+}
+
+.image-box3 
+{
+    width: 200px; 
+    height: 150px; 
+    overflow: hidden; /*Hide overflow*/
+    border-radius: 8px; /*Rounded corners*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.image-box3 img 
+{
+    width: 100%; 
+    height: auto; 
+}
+
+footer 
+{
+    background-color: #8c15e9; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+}

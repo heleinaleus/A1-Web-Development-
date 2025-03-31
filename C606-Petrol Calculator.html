@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title of the webpage-->
+    <title>Petrol Calculator</title>
+
+    <style>
+
+        body 
+        {
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        input[type=text], select 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #005bb5;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=button] 
+        {
+            width: 100%;
+            background-color: #0073e6;
+            color: #ffffff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover 
+        {
+            background-color: #005bb5;
+        }
+
+        div 
+        {
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        #totalCost 
+        {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Calculate the Cost of Petrol</h1> <!--Main Heading-->
+<h2>Please enter only numeric values</h2> <!--SubHeading for user guidance-->
+<div>
+    <label for="costPerLiter">Cost of Petrol per Liter:</label> <!--Label for cost input-->
+    <input type="text" id="costPerLiter" name="costPerLiter" placeholder="1.72" value="1.72"> <!--Input for cost per liter-->
+
+    <label for="litersPurchased">Number of Liters Purchased:</label> <!--Label for liters input-->
+    <input type="text" id="litersPurchased" name="litersPurchased" placeholder="0" value="0"> <!--Input for liters purchased-->
+
+    <input type="button" value="Calculate" onclick="calculateTotalCost()"> <!--Button for calculation-->
+</div>
+
+<p id="totalCost">Total Cost: $0.00</p> <!--This is to display the total cost-->
+
+<script>
+    //Function to calculate the total cost of petrol
+    function calculateTotalCost() {
+        //Get the cost per liter from the input and convert it to a float
+        var costPerLiter = parseFloat(document.getElementById('costPerLiter').value); 
+
+        //Get the number of liters purchased from the input and convert it to a float
+        var litersPurchased = parseFloat(document.getElementById('litersPurchased').value); 
+        
+        //Check if the inputs are valid numbers
+        if (isNaN(costPerLiter) || isNaN(litersPurchased)) {
+            document.getElementById('totalCost').innerText = "Please enter valid numeric values.";
+            return; // Exit the function if inputs are invalid
+        }
+        
+        //Calculate the total cost
+        var totalCost = costPerLiter * litersPurchased; 
+        
+        //Display the total cost 
+        document.getElementById('totalCost').innerText = "Total Cost: $" + totalCost.toFixed(2); 
+    }
+</script>
+
+</body>
+</html>

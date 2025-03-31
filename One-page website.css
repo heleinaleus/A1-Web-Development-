@@ -1,0 +1,106 @@
+body
+ {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0; 
+    color: #333; 
+}
+
+nav 
+{
+    background: #6e8887; 
+    padding: 10px;
+    position: fixed; /*Keeps the nav bar at the top while scrolling*/
+    width: 100%;
+    top: 0;
+    z-index: 100; /*Ensures it stays above other elements*/
+}
+
+nav ul 
+{
+    list-style: none;
+    display: flex;
+    justify-content: center; /*Centers nav links*/
+    padding: 0;
+}
+
+nav ul li 
+{
+    margin: 0 15px; /*Adds spacing between nav items*/
+}
+
+nav ul li a 
+{
+    color: #c5bac8; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover 
+{
+    color: #d79f90; 
+}
+
+header 
+{
+    text-align: center; 
+    padding: 50px;
+    margin-top: 60px; /*Ensures the content isn't hidden under fixed nav*/
+    background-color: #c5bac8; 
+    border-bottom: 5px solid #6e8887; 
+}
+
+.tagline
+ {
+    font-style: italic; 
+    color: #6e8887; 
+}
+
+section 
+{
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 800px; 
+    text-align: center; 
+    background: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+h2 
+{
+    color: #c67363; 
+}
+
+p 
+{
+    color: #b48d86; 
+}
+
+ul 
+{
+    list-style-type: none; /*Removes default bullet points*/
+    padding: 0; 
+}
+
+ul li 
+{
+    text-align: center; /*Ensures list items align at the center properly*/
+}
+
+.button 
+{
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #d79f90; 
+    color: #2E2A25; 
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+.button:hover 
+{
+    background-color: #c67363; 
+}
